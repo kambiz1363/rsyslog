@@ -13,8 +13,6 @@ input(type="imfile"
     readTimeout="2"
     Tag="kambiz-test"
     Ruleset="sendToaiops")
-#ruleset(name="sendToaiops") {
-#    action(type="omfwd" Target="192.168.43.37" Port="2514" Protocol="udp" template="json-template")
 :msg,contains,"kambiz kazemi" @192.168.43.37:2514;json-template
 }
 ```
