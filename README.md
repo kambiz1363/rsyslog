@@ -1,17 +1,11 @@
 # rsyslog
 ## rsyslog config
 ```
-#/etc/rsyslog.d/01-temp.conf
 module(load="imfile" PollingInterval="10")
 template(name="json-template" type="list") {
     constant(value="{")
-      constant(value="\"@timestamp\":\"")     property(name="timereported" dateFormat="rfc3339")
-      constant(value="\",\"message\":\"")     property(name="msg" format="json")
-      constant(value="\",\"logsource\":\"")   property(name="hostname")
-      constant(value="\",\"severity\":\"")    property(name="syslogseverity-text")
-      constant(value="\",\"facility\":\"")    property(name="syslogfacility-text")
-      constant(value="\",\"program\":\"") property(name="programname")
-      constant(value="\",\"pid\":\"")      property(name="procid")
+    constant(value="\"message\":\"")     property(name="msg" format="json")
+    constant(value="\",\"tag\":\"")      property(name="syslogtag" format="json")
     constant(value="\"}\n")
 }
 input(type="imfile"
