@@ -1,4 +1,3 @@
-# rsyslog
 ## rsyslog config
 ```
 module(load="imfile" PollingInterval="10")
