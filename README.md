@@ -25,3 +25,8 @@ ruleset(name="sendToaiops") {
 
 ```
 systemctl restart rsyslog
+echo "kambiz kazemi" >> /home/kambiz/test.log
+Results
+```
+{"@timestamp":"2019-09-11T12:34:41.488042+04:30","message":"kambiz kazemi","logsource":"ThinkPad","severity":"notice","facility":"local0","program":"kambiz-test","pid":"-"}
+```
