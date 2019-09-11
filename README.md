@@ -24,3 +24,4 @@ ruleset(name="sendToaiops") {
 }
 
 ```
+systemctl restart rsyslog
