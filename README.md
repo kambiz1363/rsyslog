@@ -1,6 +1,7 @@
 # rsyslog
 ## rsyslog config
 ```
+#/etc/rsyslog.d/01-temp.conf
 module(load="imfile" PollingInterval="10")
 template(name="json-template" type="list") {
     constant(value="{")
