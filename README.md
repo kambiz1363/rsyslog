@@ -18,8 +18,12 @@ ruleset(name="sendToaiops") {
 }
 
 ```
+```
 systemctl restart rsyslog
+```
+```
 echo "kambiz kazemi" >> /home/kambiz/test.log
+```
 Results
 ```
 {"message":"kambiz kazemi","tag":"kambiz-test"}
