@@ -15,6 +15,7 @@ input(type="imfile"
 :msg,contains,"kambiz kazemi" @192.168.43.37:2514;json-template
 }
 ```
+This rule forwards all messages that contain the word “kambiz kazemi” in the msg part to the server
 ```
 systemctl restart rsyslog
 ```
