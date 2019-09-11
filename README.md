@@ -5,7 +5,7 @@ module(load="imfile" PollingInterval="10")
 template(name="json-template" type="list") {
     constant(value="{")
     constant(value="\"message\":\"")     property(name="msg" format="json")
-    constant(value="\",\"tag\":\"")         property(name="syslogtag" format="json")
+    constant(value="\",\"tag\":\"")      property(name="syslogtag" format="json")
     constant(value="\"}\n")
 }
 input(type="imfile"
