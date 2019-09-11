@@ -24,7 +24,7 @@ systemctl restart rsyslog
 ```
 echo "kambiz kazemi" >> /home/kambiz/test.log
 ```
-Results
+Results:
 ```
 {"message":"kambiz kazemi","tag":"kambiz-test"}
 ```
